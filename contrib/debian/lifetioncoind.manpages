@@ -1,0 +1,3 @@
+debian/manpages/lifetioncoind.1
+debian/manpages/lifetioncoin.conf.5
+debian/manpages/lifetioncoin-cli.1

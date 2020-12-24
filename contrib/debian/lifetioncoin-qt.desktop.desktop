@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=LifetionCoin
+Comment=LifetionCoin P2P Cryptocurrency
+Exec=lifetioncoin-qt %u
+Terminal=false
+Type=Application
+Icon=lifetioncoin128
+MimeType=x-scheme-handler/lifetioncoin;
+Categories=Office;Finance;
+Name[en_US]=lifetioncoin-qt.desktop.desktop

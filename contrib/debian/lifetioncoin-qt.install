@@ -1,0 +1,6 @@
+usr/local/bin/lifetioncoin-qt usr/bin
+share/pixmaps/lifetioncoin32.xpm usr/share/pixmaps
+share/pixmaps/lifetioncoin16.xpm usr/share/pixmaps
+share/pixmaps/lifetioncoin128.png usr/share/pixmaps
+debian/lifetioncoin-qt.desktop usr/share/applications
+debian/lifetioncoin-qt.protocol usr/share/kde4/services/

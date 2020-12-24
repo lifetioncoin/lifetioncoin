@@ -1,0 +1,68 @@
+Source: lifetioncoin
+Section: utils
+Priority: optional
+Maintainer: Holger Schinzel <holger@cointobanks.com>
+Uploaders: Holger Schinzel <holger@cointobanks.com>
+Build-Depends: debhelper,
+ devscripts,
+ automake,
+ libtool,
+ bash-completion,
+ libdb4.8++-dev,
+ libssl-dev,
+ pkg-config,
+ libevent-dev,
+ libboost-system1.48-dev | libboost-system-dev (>> 1.35),
+ libboost-filesystem1.48-dev | libboost-filesystem-dev (>> 1.35),
+ libboost-program-options1.48-dev | libboost-program-options-dev (>> 1.35),
+ libboost-thread1.48-dev | libboost-thread-dev (>> 1.35),
+ libboost-test1.48-dev | libboost-test-dev (>> 1.35),
+ libboost-chrono1.48-dev | libboost-chrono-dev (>> 1.35),
+ qt4-qmake,
+ libqt4-dev,
+ libqrencode-dev,
+ libprotobuf-dev, protobuf-compiler,
+ python
+Standards-Version: 3.9.2
+Homepage: https://www.cointobanks.com/
+Vcs-Git: git://github.com/cointobanks/lifetioncoin.git
+Vcs-Browser: https://github.com/cointobanks/lifetioncoin
+
+Package: lifetioncoind
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - daemon
+ LifetionCoin is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. LifetionCoin uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. LifetionCoin Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides the daemon, lifetioncoind, and the CLI tool
+ lifetioncoin-cli to interact with the daemon.
+
+Package: lifetioncoin-qt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - Qt GUI
+ LifetionCoin is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. LifetionCoin uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. LifetionCoin Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides LifetionCoin-Qt, a GUI for LifetionCoin based on Qt.
+
+Package: lifetioncoin-tx
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer digital currency - standalone transaction tool
+ LifetionCoin is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. LifetionCoin uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. LifetionCoin Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides lifetioncoin-tx, a command-line transaction creation
+ tool which can be used without a lifetioncoin daemon.  Some means of
+ exchanging minimal transaction data with peers is still required.
